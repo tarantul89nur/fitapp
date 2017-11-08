@@ -1,0 +1,34 @@
+{
+  "name": "pink-responsive-",
+  "version": "1.0.0",
+  "description": "Привет",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarantul89nur/pink-responsive-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarantul89nur/pink-responsive-/issues"
+  },
+  "homepage": "https://github.com/tarantul89nur/pink-responsive-#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}
