@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Наименование</title>
+  <title>Fitapp</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin,cyrillic" rel="stylesheet">
 
   <link href="css/normalize--min.css" rel="stylesheet">
   <link href="css/style--min.css" rel="stylesheet">
@@ -16,13 +16,113 @@
 
 <body>
 
-  <header>
+  <header class="page-header">
+    <h1 class="visually-hidden">FitApp - главная страница.</h1>
+    <div class="page-header__wrapper">
+      <nav class="main-nav">
+        <a class="main-nav__logo">FitApp</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">About</li>
+          <li class="main-nav__item">Features</li>
+          <li class="main-nav__item">Reviews</li>
+          <li class="main-nav__item">Blog</li>
+          <li class="main-nav__item">Support</li>
+          <li class="main-nav__item  main-nav__item--active">Get App</li>
+        </ul>
+      </nav>
+      <section class="intro">
+        <img src="111" alt="App's icon" class="intro__app-icon">
+        <b class="intro__title">Helps you eat better.</b>
+        <p class="intro__text">FitApp is a free calorie counting and diet app PSD template which includes high quality 9 screens. This template can be very helpful if you're planning to build food tracking application.</p>
+        <div class="download-btns">
+          <a href="appstore.com" class="download-btns__appstore" target="_blank">AppStore</a>
+          <a href="googleplay.com" class="download-btns__googleplay" target="_blank">GooglePlay</a>
+        </div>
+      </section>
+    </div>
   </header>
 
   <main>
+    <section class="features">
+      <h1 class="visually-hidden">Лучшее приложение для подсчета калорий!</h1>
+      <div class="features__wrapper">
+        <img src="111" alt="Features" class="features__img">
+        <div class="features__description">
+          <b class="features__title">Best calorie counter app!</b>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+    </section>
+    <section class="plan-diet">
+      <h1 class="visually-hidden">Простой способ планировать свою диету!</h1>
+      <div class="plan-diet__wrapper">
+        <b class="plan-diet__title">A simple way to plan your diet!</b>
+        <p class="plan-diet__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+    </section>
+    <section class="meal-time">
+      <h1 class="visually-hidden">Управляйте временем приема пищи.</h1>
+      <div class="meal-time__description">
+        <b class="meal-time__title">Manage your meal time</b>
+        <p class="meal-time__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
+      <div class="meal-time__example">
+        <div class="meal-block">
+          <div class="meal-block__description">
+            <b class="meal-block__title">Apple</b>
+            <p class="meal-block__text">Lorem ipsum dolor sit</p>
+            <div class="meal-block__weight">
+              <p class="meal-block__gramm">35 G</p>
+              <span class="meal-block__separator"></span>
+              <p class="meal-time__kcal">189 KCAL</p>
+            </div>
+          </div>
+          <div class="meal-block__time">
+            <b class="meal-block__clock">01:00</b>
+            <p class="meal-time__pm">PM</p>
+          </div>
+        </div>
+        <div class="meal-block  meal-block--active">
+          <div class="meal-block__description">
+            <b class="meal-block__title  meal-block__title--active">Sandwich</b>
+            <p class="meal-block__text  meal-block__text--active">Lorem ipsum dolor sit</p>
+            <div class="meal-block__weight">
+              <p class="meal-block__gramm  meal-block__gramm--active">35 G</p>
+              <span class="meal-block__separator  meal-block__separator--active"></span>
+              <p class="meal-time__kcal  meal-time__kcal--active">189 KCAL</p>
+            </div>
+          </div>
+          <div class="meal-block__time">
+            <b class="meal-block__clock  meal-block__clock--active">03:00</b>
+            <p class="meal-time__pm  meal-time__pm--active">PM</p>
+          </div>
+        </div>
+        <div class="meal-block">
+          <div class="meal-block__description">
+            <b class="meal-block__title">Salad with chicken</b>
+            <p class="meal-block__text">Lorem ipsum dolor sit</p>
+            <div class="meal-block__weight">
+              <p class="meal-block__gramm">220 G</p>
+              <span class="meal-block__separator"></span>
+              <p class="meal-time__kcal">189 KCAL</p>
+            </div>
+          </div>
+          <div class="meal-block__time">
+            <b class="meal-block__clock">05:30</b>
+            <p class="meal-time__pm">PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="page-footer">
+    <h1 class="visually-hidden">Загрузите, настройте и наслаждайтесь!</h1>
+    <div class="page-footer__wrapper">
+      <b class="page-footer__title">Download, customize & <span>enjoy!</span></b>
+      <p class="page-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <button class="btn-getapp" type="button" name="download">Get App</button>
+    </div>
   </footer>
 
   <script src="js/script--min.js"></script>
