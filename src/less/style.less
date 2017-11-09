@@ -26,6 +26,7 @@ body {
   font-family: "Roboto", Arial, sant-serif;
   font-size: 18px;
   line-height: 32px;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
@@ -39,4 +40,143 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.container-fluid () {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  min-height: 900px;
+  background-image: url('../img/header-iphone.png'), url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 900px;
+  background-position: right, center;
+
+  &__wrapper {
+    .container-fluid ();
+    padding: 33px 15px 0;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+
+  &__logo {
+    font-size: 0;
+    width: 133px;
+    height: 41px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 36px;
+    border-radius: 30px;
+    transition: all .4s;
+
+    &:hover {
+      background-color: #fff;
+      color: #2ecc71;
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .4;
+    }
+
+    &--active {
+      font-weight: 700;
+      color: #2ecc71;
+      background-color: #fff;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  &__app-icon {
+    width: 111px;
+    height: 111px;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    font-size: 64px;
+    line-height: 64px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 300;
+    max-width: 580px;
+    margin-bottom: 60px;
+  }
+}
+
+.download-btns {
+  display: flex;
+  font-size: 0;
+
+  &__appstore {
+    width: 130px;
+    height: 46px;
+    background-image: url('../img/Appstore.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+    transition: all .2s;
+  }
+
+  &__googleplay {
+    width: 137px;
+    height: 46px;
+    background-image: url('../img/Google Play.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s;
+  }
+
+  &__appstore:hover,
+  &__googleplay:hover {
+    opacity: .7;
+  }
+
+  &__appstore:active,
+  &__googleplay:active {
+    opacity: .4;
+  }
 }
