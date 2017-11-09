@@ -48,15 +48,34 @@ body {
 }
 
 .page-header {
+  position: relative;
   min-height: 900px;
-  background-image: url('../img/header-iphone.png'), url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-size: 100% 900px;
-  background-position: right, center;
+  background-position: center;
+  margin-bottom: 92px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 155px;
+    height: 185px;
+    background-image: url('../img/header-berry.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   &__wrapper {
     .container-fluid ();
-    padding: 33px 15px 0;
+    padding: 33px 15px 164px;
+    background-image: url('../img/header-iphone.png');
+    background-repeat: no-repeat;
+    background-size: 404px 753px;
+    background-position: bottom right;
   }
 }
 
@@ -178,5 +197,84 @@ body {
   &__appstore:active,
   &__googleplay:active {
     opacity: .4;
+  }
+}
+
+.features {
+  margin-bottom: 100px;
+
+  &__wrapper {
+    .container-fluid ();
+    width: 1234px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    width: 608px;
+    height: 712px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 300;
+    color: #5a5a5a;
+    margin-bottom: 30px;
+
+    & span {
+      color: #2ecc71;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #5a5a5a;
+    max-width: 470px;
+  }
+}
+
+.plan-diet {
+  background-image: url('../img/plan-diet-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 150px;
+
+  &__wrapper {
+    .container-fluid ();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 115px 0 655px;
+    max-width: 850px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #5a5a5a;
+    margin-bottom: 30px;
+
+    & span {
+      color: #2ecc71;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #5a5a5a;
+    text-align: center;
   }
 }
