@@ -247,7 +247,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 150px;
 
   &__wrapper {
     .container-fluid ();
@@ -276,5 +275,282 @@ body {
     font-weight: 300;
     color: #5a5a5a;
     text-align: center;
+  }
+}
+
+.meal-time {
+  padding-top: 150px;
+  padding-bottom: 113px;
+  background-color: #f9fbfa;
+
+  &__wrapper {
+    .container-fluid ();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 300;
+    color: #5a5a5a;
+
+    & span {
+      color: #2ecc71;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #5a5a5a;
+    max-width: 470px;
+  }
+
+  &__example {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.meal-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 420px;
+  padding: 25px 20px;
+  background-color: #fff;
+  border: 2px solid #eeefee;
+  border-radius: 10px;
+  margin-bottom: 28px;
+
+  &--active {
+    width: 525px;
+    padding: 25px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &--apple {
+      padding-left: 114px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 95px;
+        height: 56px;
+        background-image: url('../img/meal-time-apple.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--sandwich {
+      padding-left: 141px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 126px;
+        height: 90px;
+        background-image: url('../img/meal-time-sandwich.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--salad {
+      padding-left: 114px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        content: "";
+        width: 112px;
+        height: 62px;
+        background-image: url('../img/meal-time-salad.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #2ecc71;
+
+    &--active {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #5a5a5a;
+
+    &--active {
+      font-size: 15px;
+      line-height: 21px;
+    }
+  }
+
+  &__weight {
+    display: flex;
+    align-items: center;
+  }
+
+  &__gramm {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #2ecc71;
+
+    &--active {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+
+  &__separator {
+    width: 3px;
+    height: 3px;
+    background-color: #b4b4b4;
+    border-radius: 50%;
+    margin: 0 10px;
+
+    &--active {
+      width: 4px;
+      height: 4px;
+    }
+  }
+
+  &__kcal {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #2ecc71;
+
+    &--active {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__clock {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #b4b4b4;
+
+    &--active {
+      font-size: 31px;
+      line-height: 31px;
+      color: #2ecc71;
+    }
+
+    &--green {
+      color: #2ecc71;
+    }
+  }
+
+  &__pm {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #b4b4b4;
+
+    &--active {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.page-footer {
+  padding: 100px 0;
+  background-image: url('../img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    .container-fluid ();
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 25px;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #fff;
+    max-width: 855px;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+}
+
+.btn-getapp {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2ecc71;
+  padding: 10px;
+  width: 245px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all .4s;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .4;
   }
 }
