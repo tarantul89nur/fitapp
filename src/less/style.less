@@ -59,7 +59,7 @@ body {
   &::after {
     content: "";
     position: absolute;
-    bottom: -55px;
+    bottom: -52px;
     left: 50%;
     transform: translateX(-50%);
     width: 155px;
@@ -71,7 +71,7 @@ body {
 
   &__wrapper {
     .container-fluid ();
-    padding: 33px 15px 164px;
+    padding: 30px 16px 179px 14px;
     background-image: url('../img/header-iphone.png');
     background-repeat: no-repeat;
     background-size: 404px 753px;
@@ -83,7 +83,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px;
+  margin-bottom: 196px;
 
   &__logo {
     font-size: 0;
@@ -97,6 +97,7 @@ body {
   &__list {
     display: flex;
     list-style: none;
+    padding-bottom: 3px;
   }
 
   &__link {
@@ -104,13 +105,12 @@ body {
     font-weight: 400;
     color: #fff;
     text-decoration: none;
-    padding: 12px 36px;
+    padding: 10px 0;
+    margin-right: 55px;
     border-radius: 30px;
     transition: all .4s;
 
     &:hover {
-      background-color: #fff;
-      color: #2ecc71;
       opacity: .7;
     }
 
@@ -122,6 +122,7 @@ body {
       font-weight: 700;
       color: #2ecc71;
       background-color: #fff;
+      padding: 10px 38px;
 
       &:hover {
         opacity: 1;
@@ -132,6 +133,10 @@ body {
       }
     }
   }
+
+  &__item:last-child &__link {
+    margin-right: 0;
+  }
 }
 
 .intro {
@@ -141,18 +146,20 @@ body {
   &__app-icon {
     width: 111px;
     height: 111px;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   &__title {
     font-size: 64px;
     line-height: 64px;
+    letter-spacing: 3px;
     color: #fff;
     font-weight: 300;
     margin-bottom: 20px;
 
     & span {
       font-weight: 700;
+      letter-spacing: 2px;
     }
   }
 
@@ -162,7 +169,7 @@ body {
     color: #fff;
     font-weight: 300;
     max-width: 580px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 }
 
@@ -201,11 +208,11 @@ body {
 }
 
 .features {
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 
   &__wrapper {
     .container-fluid ();
-    width: 1234px;
+    width: 1264px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,14 +226,16 @@ body {
   &__description {
     display: flex;
     flex-direction: column;
+    padding-right: 44px;
   }
 
   &__title {
     font-size: 48px;
     line-height: 60px;
+    letter-spacing: 1px;
     font-weight: 300;
     color: #5a5a5a;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
 
     & span {
       color: #2ecc71;
@@ -253,16 +262,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 115px 0 655px;
+    padding: 111px 0 650px;
     max-width: 850px;
   }
 
   &__title {
     font-size: 48px;
     line-height: 48px;
+    letter-spacing: 1px;
     font-weight: 300;
     color: #5a5a5a;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 
     & span {
       color: #2ecc71;
@@ -280,7 +290,7 @@ body {
 
 .meal-time {
   padding-top: 150px;
-  padding-bottom: 113px;
+  padding-bottom: 115px;
   background-color: #f9fbfa;
 
   &__wrapper {
@@ -293,16 +303,21 @@ body {
   &__description {
     display: flex;
     flex-direction: column;
-    max-width: 540px;
+    max-width: 560px;
+    padding-bottom: 36px;
+    padding-left: 11px;
   }
 
   &__title {
     font-size: 48px;
     line-height: 60px;
+    letter-spacing: 1px;
     font-weight: 300;
     color: #5a5a5a;
+    margin-bottom: 19px;
 
     & span {
+      letter-spacing: 3px;
       color: #2ecc71;
     }
   }
@@ -328,7 +343,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 420px;
-  padding: 25px 20px;
+  padding: 22px 20px;
   background-color: #fff;
   border: 2px solid #eeefee;
   border-radius: 10px;
@@ -336,7 +351,7 @@ body {
 
   &--active {
     width: 525px;
-    padding: 25px;
+    padding: 27px;
   }
 
   &__description {
@@ -497,7 +512,7 @@ body {
 }
 
 .page-footer {
-  padding: 100px 0;
+  padding: 102px 0 100px;
   background-image: url('../img/footer-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -513,9 +528,10 @@ body {
   &__title {
     font-size: 48px;
     line-height: 60px;
+    letter-spacing: 1px;
     color: #fff;
     font-weight: 300;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 
     & span {
       font-weight: 400;
@@ -529,7 +545,7 @@ body {
     color: #fff;
     max-width: 855px;
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 }
 
@@ -538,7 +554,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #2ecc71;
-  padding: 10px;
+  padding: 6px;
   width: 245px;
   background-color: #fff;
   border: none;
